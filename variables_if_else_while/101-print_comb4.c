@@ -10,9 +10,11 @@ int main(void)
 	int j = 49;
 	int k = 50;
 
-		while (i < 58)
+	while (i < 58)
+	{
+		while (j < 58)
 		{
-			while (j < 58)
+			while (k < 58)
 			{
 				putchar(i);
 				putchar(j);
@@ -30,6 +32,6 @@ int main(void)
 		i++;
 		j = i;
 	}
-	putchar('\n');
+	putchar( '\n' );
 	return (0);
 }

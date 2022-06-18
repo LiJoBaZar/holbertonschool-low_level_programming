@@ -1,7 +1,7 @@
-#include <main.h>
-
+#include "main.h"
 /**
- *main - prints _putchar
+ *main - print _putchar
+ *Description: print _putchar word
  *Return: 0 if success
  */
 int main(void)

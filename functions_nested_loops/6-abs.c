@@ -4,7 +4,7 @@
  *@n: int type intiger
  *Description: calculate absolout
  *Return: 0 always
- *     */
+ */
 int _abs(int n)
 {
 		if (n < 0)

@@ -1,4 +1,4 @@
-nclude "holberton.h"
+#include "main.h"
 
 /**
  *print_square - prints a square in the terminal

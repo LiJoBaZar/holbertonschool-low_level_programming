@@ -1,34 +1,38 @@
-#include "main.h"
 #include <stdio.h>
-
 /**
- *Print_to_98 - counting
- *@n: number
- *
- *Return: nothing, finction void
+ *print_to_98 - the function return all number until 98
+ *@n: valor de numbers
  */
 void print_to_98(int n)
-{
-	int i, j;
 
-	if (n <= 98)
+{
+	int z;
+
+	if (n == 98)
+	printf("%i", n);
+	else if (n  > 98)
 	{
-		for (i = n; i <= 98; i++)
+		for (z = n; z >= 98; z--)
 		{
-			if (i != 98)
-				printf("%d, ", i);
-			else if (i == 98)
-				printf("%d\n", i);
+			printf("%i", z);
+			if (z != 98)
+			{
+				printf(",");
+				printf(" ");
+			}
 		}
 	}
-	else if (n >= 98)
+	else if (n < 98)
 	{
-		for (j = n; j >= 98; j--)
+		for (z = n; z <= 98; z++)
 		{
-			if (j != 98)
-				printf("%d, ", j);
-			else if (j == 98)
-				printf("%d\n", j);
+			printf("%i", z);
+			if (z != 98)
+			{
+				printf(",");
+				printf(" ");
+			}
 		}
 	}
+	printf("\n");
 }

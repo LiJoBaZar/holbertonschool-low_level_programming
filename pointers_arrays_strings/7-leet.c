@@ -1,7 +1,5 @@
 #include "main.h"
-
 /**
- *leet - Encodes a string into 1337
  *@s: is a parameter
  *Return: String in 1337 code
  */

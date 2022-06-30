@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+ **leet - encode into 1337speak
  *@s: is a parameter
  *Return: String in 1337 code
  */

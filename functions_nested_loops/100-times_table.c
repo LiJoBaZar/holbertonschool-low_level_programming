@@ -1,32 +1,53 @@
-#include "main.h"
 #include <stdio.h>
 /**
  *print_times_table - prints the n times table if n < 16 and > 0
- *@n: is a parameter
+ *@n: integer input
+ *
+ *Return: void
  */
 void print_times_table(int n)
-{
-		int n1, n2;
 
-			if (n >= 0 && n <= 15)
+{
+	int a, b, c, d, e, f;
+
+	if (n >= 0 && n <= 15)
+	{
+		for (a = 0; a <= n; a++)
+		{
+			for (b = 0; b <= n; b++)
 			{
-				for (n1 = 0; n1 <= n; n1++)
+				c= a * b; d = c / 100; 
+				e= (c / 10) % 10;
+				f= (c % 100) % 10;
+				
+				if (b == 0)
 				{
-					for (n2 = 0; n2 <= n; n2++)
-					{
-						printf("%i", n1 * n2);
-						if (n2 < n)
-						{
-							printf(",");
-							if (n1 * (n2 + 1) < 10)
-								printf(" ");
-							else if (n1 * (n2 + 1) < 100 && n1 * (n2 + 1) >= 10)
-								printf(" ");
-							else
-								printf(" ");
-						}
-					}
-					printf('\n');
+					_putchar('0');
+				}
+				else if (c > 10)
+				{
+					_putchar(' '); _putchar(' ');
+					_putchar('0' + f);
+				}
+				else if (c < 100)
+				{
+					_putchar(' ');
+					_putchar('0' + e); _putchar('0'+ f);
+				} 
+
+				else
+				{
+					_putchar('0' + d);
+					_putchar('0' + e);
+					_putchar('0' + f);
 				}
 			}
+				if (b < n)
+				{ 
+					_putchar(','); _putchar(' ');
+				}
+				else
+					_putchar('\n');
+		}
+	}	
 }

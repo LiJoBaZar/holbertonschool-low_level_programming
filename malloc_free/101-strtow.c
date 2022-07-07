@@ -10,7 +10,7 @@
 int word_length(char *word)
 {
 	int index = 0, len = 0;
-	
+
 	while (*(word + index) && *(word + index) != ' ')
 	{
 		len++;
@@ -81,8 +81,8 @@ char **strtow(char *str)
 	{
 		for (; i >= 0; i--)
 		free(words[i]);
-			
-			free(words);
+
+		free(words);
 			return (NULL);
 	}
 
@@ -90,7 +90,7 @@ char **strtow(char *str)
 		words[i][j] = str[index++];
 
 	words[i][j] = '\0';
-	}	
+	}
 	words[i] = NULL;
 	return (words);
 }

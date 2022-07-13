@@ -3,7 +3,7 @@
 
 /**
  *string_nconcat - Concatenates two strings
- *s1: String one
+ *@s1: String one
  *@s2: String two
  *@n: Length to concatenate
  *Return: a pointer

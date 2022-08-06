@@ -1,20 +1,20 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- *main - check the code
- *
- *Return: Always 0.
+ *get_bit - Returns the value of a bit at a given index
+ *@n: Number
+ *@index: index of the bit you want to get
+ *Return: Value of the bit at index
  */
-int main(void)
-{
-	int n;
 
-	n = get_bit(1024, 10);
-	printf("%d\n", n);
-	n = get_bit(98, 1);
-	printf("%d\n", n);
-	n = get_bit(1024, 0);
-	printf("%d\n", n);
-	return (0);
+int get_bit(unsigned long int n, unsigned int index)
+{
+	int valbit;
+
+	if (index > 63)
+		return (-1);
+
+	valbit = (n >> index) & 1;
+
+	return (valbit);
 }
